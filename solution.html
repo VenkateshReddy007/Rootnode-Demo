@@ -26,14 +26,14 @@
       </svg>
       RootNode
     </a>
-    <ul class="nav-links">
+    <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="index.html#features">Features</a></li>
       <li><a href="index.html#demo">Demo</a></li>
-      <li><a href="solution.html">Solution</a></li>
+      <li><a href="solution.html" onclick="document.getElementById('nav-links').classList.remove('show')">Solution</a></li>
     </ul>
     <a href="index.html" class="nav-cta">← Back to Home</a>
-    <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')" aria-label="Menu">☰</button>
+    <button class="hamburger" onclick="document.getElementById('nav-links').classList.toggle('show')" aria-label="Menu">☰</button>
   </div>
 </nav>
 

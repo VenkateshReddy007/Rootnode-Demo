@@ -31,14 +31,14 @@
       </svg>
       RootNode
     </a>
-    <ul class="nav-links">
-      <li><a href="#features">Features</a></li>
-      <li><a href="#how-it-works">How It Works</a></li>
-      <li><a href="#demo">Demo</a></li>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#features" onclick="document.getElementById('nav-links').classList.remove('show')">Features</a></li>
+      <li><a href="#how-it-works" onclick="document.getElementById('nav-links').classList.remove('show')">How It Works</a></li>
+      <li><a href="#demo" onclick="document.getElementById('nav-links').classList.remove('show')">Demo</a></li>
       <li><a href="solution.html">Solution</a></li>
     </ul>
     <a href="solution.html" class="nav-cta">View Solution →</a>
-    <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('show')" aria-label="Menu">☰</button>
+    <button class="hamburger" onclick="document.getElementById('nav-links').classList.toggle('show')" aria-label="Menu">☰</button>
   </div>
 </nav>
 

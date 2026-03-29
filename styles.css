@@ -95,7 +95,7 @@ body {
 }
 .nav-inner {
   display: flex; align-items: center; justify-content: space-between;
-  max-width: 1280px; margin: 0 auto; padding: 0 24px;
+  max-width: 1280px; margin: 0 auto; padding: 0 24px; position: relative;
 }
 .nav-logo {
   font-family: var(--font-heading); font-weight: 800; font-size: 1.5rem;
@@ -580,8 +580,53 @@ textarea.code-editor { outline: none; }
 @keyframes gentle-float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
 
 /* Hamburger menu */
-.hamburger { display: none; background: none; border: none; cursor: pointer; color: var(--text); font-size: 1.5rem; }
-@media(max-width:768px) { .hamburger { display: block; } }
+.hamburger {
+  display: none; background: none; border: none; cursor: pointer;
+  color: var(--text); font-size: 1.5rem; z-index: 110;
+  padding: 4px 8px; border-radius: 4px;
+  transition: var(--transition);
+}
+.hamburger:hover { color: var(--cyan); }
+
+@media(max-width:768px) {
+  .hamburger { display: block; }
+
+  .nav-links.show {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(2, 8, 23, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-glass);
+    padding: 16px 24px;
+    gap: 0;
+    animation: slideDown 0.3s ease forwards;
+  }
+  .nav-links.show li {
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-glass);
+  }
+  .nav-links.show li:last-child {
+    border-bottom: none;
+  }
+  .nav-links.show a {
+    font-size: 1rem;
+    color: var(--text);
+    display: block;
+  }
+  .nav-links.show a:hover {
+    color: var(--cyan);
+  }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 
 /* Tooltip */
 .tooltip {
