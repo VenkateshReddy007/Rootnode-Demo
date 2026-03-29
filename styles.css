@@ -458,14 +458,103 @@ textarea.code-editor { outline: none; }
   .stats-bar { grid-template-columns: repeat(2, 1fr); }
   .build-timeline { grid-template-columns: repeat(2, 1fr); }
   .chart-grid { grid-template-columns: 1fr; }
+  .grid-3 { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
+  html, body { overflow-x: hidden; }
+  .container { padding: 0 16px; }
   .nav-links { display: none; }
+  .nav-cta { display: none; }
+  .nav-inner { padding: 0 16px; }
   .pipeline, .grid-3, .grid-4 { grid-template-columns: 1fr; }
   .stats-bar { grid-template-columns: 1fr; }
   .build-timeline { grid-template-columns: 1fr; }
-  h1 { font-size: clamp(2.5rem, 8vw, 4rem); }
-  .section { padding: 60px 0; }
+  h1 { font-size: clamp(2rem, 8vw, 3.5rem); }
+  h2 { font-size: clamp(1.6rem, 5vw, 2.5rem); }
+  .section { padding: 48px 0; }
+  .section-sm { padding: 32px 0; }
+
+  /* Hero fixes */
+  .hero-dag { margin-top: 32px; }
+  .hero-dag svg { max-width: 100%; }
+  .float-pill { display: none; }
+
+  /* Code editor wrapping */
+  .code-editor { white-space: pre-wrap; word-break: break-all; font-size: 0.65rem; min-height: 160px; }
+
+  /* Demo */
+  .demo-body { padding: 14px; }
+  .demo-header { padding: 10px 14px; font-size: 0.7rem; }
+
+  /* Tabs horizontal scroll */
+  .tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 4px; }
+  .tab-btn { white-space: nowrap; padding: 8px 16px; font-size: 0.75rem; flex-shrink: 0; }
+
+  /* Arch diagram */
+  .arch-diagram { flex-direction: column; gap: 12px; padding: 20px 0; }
+  .arch-box { min-width: unset; width: 100%; padding: 16px 20px; }
+  .arch-arrow { transform: rotate(90deg); }
+
+  /* Comparison table scroll */
+  .comparison-table { font-size: 0.75rem; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .comparison-table th, .comparison-table td { padding: 10px 12px; white-space: nowrap; }
+
+  /* Heatmap scroll */
+  .heatmap-grid { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* Gantt */
+  .gantt-label { width: 90px; font-size: 0.7rem; }
+  .gantt-bar { font-size: 0.6rem; padding: 0 6px; }
+
+  /* CTA */
+  .cta-section { padding: 60px 0; }
+  .cta-glow { width: 300px; height: 300px; }
+
+  /* Badge text wrap */
+  .badge { font-size: 0.65rem; text-align: center; padding: 6px 14px; }
+
+  /* Buttons */
+  .btn { padding: 12px 24px; font-size: 0.9rem; }
+
+  /* Team cards */
+  .grid-4 { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .team-card { padding: 20px 12px; }
+  .team-card h4 { font-size: 0.9rem; }
+  .team-role { font-size: 0.65rem; }
+  .team-skills { font-size: 0.7rem; }
+
+  /* Footer */
+  .footer-links { flex-wrap: wrap; gap: 16px; }
+
+  /* Code blocks */
+  .code-block { padding: 14px; font-size: 0.65rem; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* Checklist */
+  .checklist li { font-size: 0.8rem; padding: 10px 14px; }
+
+  /* Build timeline */
+  .build-phase { padding: 20px; }
+  .build-phase h4 { font-size: 0.85rem; }
+  .build-phase p { font-size: 0.75rem; }
+
+  /* Solution tech pills */
+  .grid-2[style*="gap:48px"] { gap: 24px !important; }
+
+  /* Impact stats */
+  .stat-number { font-size: clamp(1.8rem, 6vw, 3rem) !important; }
+
+  /* Step detail sticky → static on mobile */
+  .glass[style*="position:sticky"] { position: static !important; }
+}
+
+@media (max-width: 480px) {
+  .container { padding: 0 12px; }
+  h1 { font-size: clamp(1.8rem, 9vw, 2.8rem); }
+  .grid-4 { grid-template-columns: 1fr; }
+  .stats-bar .stat-item { padding: 24px 16px; }
+  .problem-card { padding: 20px; }
+  .step-card { padding: 20px; }
+  .step-num { font-size: 2rem; }
 }
 
 /* Fade-in animation */
