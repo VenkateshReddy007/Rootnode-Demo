@@ -28,7 +28,7 @@
 
 ---
 
-## 🔥 The Problem
+## The Problem
 
 Cloud migrations are a **$500B industry** riddled with failure:
 
@@ -43,14 +43,14 @@ Cloud migrations are a **$500B industry** riddled with failure:
 
 ---
 
-## ⚡ How It Works
+## How It Works
 
 RootNode replaces months of consulting with an **8-step AI pipeline** that runs in seconds:
 
 ```
-📤 Upload Portfolio → 🔗 Build DAG → 📊 Generate Waves → ⚠️ Score Risk
+Upload Portfolio → 🔗 Build DAG → 📊 Generate Waves → ⚠️ Score Risk
       ↓                                                        ↓
-🤖 AI Explanation ← 📦 Final Output ← ⏱️ Estimate Timeline ← 🔄 Assign Strategy
+AI Explanation ← 📦 Final Output ← ⏱️ Estimate Timeline ← 🔄 Assign Strategy
 ```
 
 | Step | What Happens |
@@ -66,7 +66,7 @@ RootNode replaces months of consulting with an **8-step AI pipeline** that runs 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 <table>
 <tr>
@@ -93,29 +93,29 @@ RootNode replaces months of consulting with an **8-step AI pipeline** that runs 
 
 ---
 
-## ✨ Features
+## Features
 
-### 🎯 Core Engine
+### Core Engine
 - **Dependency DAG Analysis** — Automatically maps all application relationships
 - **Wave Planning** — Generates 3-5 migration waves respecting every dependency
 - **Risk Scoring** — 4-factor composite risk for each application
 - **Strategy Assignment** — Rehost / Replatform / Refactor per app
 - **AI Explanations** — Amazon Bedrock explains WHY each decision was made
 
-### 📊 Visualizations
+### Visualizations
 - **Interactive Dependency Graph** — Draggable nodes, color-coded by wave
 - **Gantt Timeline** — Visual wave timeline with strategy & risk overlay
 - **Risk Heatmap** — Apps × risk factors matrix with color-coded cells
 - **Cost Breakdown** — Donut + bar charts for strategy distribution & wave duration
 
-### 🎨 Design
+### Design
 - **Futuristic Glassmorphism** — Deep space theme with glass cards and glow effects
 - **Animated Mesh Background** — Floating gradient orbs with CSS keyframes
 - **Micro-Animations** — Hover glows, scroll counters, staggered reveals
 - **Oversized Typography** — Syne + Inter from Google Fonts
 - **Fully Responsive** — Mobile, tablet, and desktop optimized
 
-### 🔄 Interactive Demo
+### Interactive Demo
 - Pre-filled portfolio data in a code-editor style textarea
 - Click → 2s loading animation with status cycling
 - Wave plan output with risk badges, strategy tags, and AI insights
@@ -123,7 +123,7 @@ RootNode replaces months of consulting with an **8-step AI pipeline** that runs 
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌──────────────┐     CSV/JSON     ┌──────────────┐     invoke     ┌──────────────┐
@@ -135,13 +135,13 @@ RootNode replaces months of consulting with an **8-step AI pipeline** that runs 
                                                             ▼           ▼           ▼
                                                     ┌──────────┐ ┌──────────┐ ┌──────────┐
                                                     │ Bedrock  │ │    S3    │ │ DynamoDB │
-                                                    │ (Claude) │ │ (Plans) │ │(History) │
+                                                    │ (Claude) │ │ (Plans)  │ │(History) │
                                                     └──────────┘ └──────────┘ └──────────┘
 ```
 
 ---
 
-## 📋 PS 2.4 Compliance
+## PS 2.4 Compliance
 
 | Requirement | Status |
 |-------------|--------|
@@ -155,7 +155,7 @@ RootNode replaces months of consulting with an **8-step AI pipeline** that runs 
 
 ---
 
-## 🏆 What Makes This Different
+## What Makes This Different
 
 ```diff
 +  ✓ DAG-based dependency analysis (not just lists)
@@ -172,7 +172,7 @@ RootNode replaces months of consulting with an **8-step AI pipeline** that runs 
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Clone the repo
@@ -187,7 +187,7 @@ vercel --prod
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Rootnode-Demo/
@@ -200,7 +200,7 @@ Rootnode-Demo/
 
 ---
 
-## 👥 The Team
+## The Team
 
 <table>
 <tr>
